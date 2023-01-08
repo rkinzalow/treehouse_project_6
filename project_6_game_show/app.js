@@ -33,11 +33,9 @@ const addPhraseToDisplay = (phrase) => {
 const checkWin = () => {
   //checks for win
   if (lettersFound === phraseLength) {
-    setTimeout(() => {
-      overLay.style.display = "flex";
-      overLay.className = "win";
-      btnReset.innerText = "Play Again";
-    }, 800);
+    overLay.style.display = "flex";
+    overLay.className = "win";
+    btnReset.innerText = "Play Again";
   }
   //Checks for Lose
   if (missed > 4) {
